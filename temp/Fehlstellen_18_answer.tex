@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}    
+Zwillingsgrenzen sind Korngrenzen die als Spiegelachse für die Kristallstruktur fungieren. Ein Beispiel für diese Zwillingsgrenze kann man in Abbildung \ref{fig:Zwillingsgrenze} sehen. Zwillingsgrenzen entstehen zum Beispiel durch Scherung. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.6\textwidth]{images/Materialwissenschaften/Zwillingsgrenze.jpeg}
+    \caption{Visualisierung von einer Zwillingsgrenze}
+    \label{fig:Zwillingsgrenze}
+\end{figure}\\
+\end{addmargin}
+
+
+
+\end{document}

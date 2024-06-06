@@ -10,8 +10,23 @@
 \usepackage[version=4]{mhchem}
 \usepackage{url}
 \usepackage{setspace}
-\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+\usepackage[left=12.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{scrextend}
 \usepackage{hyperref}
 \pagestyle{fancy}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}

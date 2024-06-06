@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Es entstehen dicht gepackte Schichten aus großen Anionen und kleineren Kationen in den Zwischenräumen. 2 benachbarte schichten von Anionen können dabei entweder eine Tetraederposition bilden, dabei werden 3 Anionen aus einer mit einem Anion aus der zweiten Schicht verwendet, oder es bildet sich eine Oktaederposition mit jeweils 3 Ionen aus jeder Schicht. In den Zwischenräumen lagern sich jeweils Kationen ein.  \\
+\end{addmargin}
+
+\end{document}

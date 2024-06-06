@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Das Hooke'sche Gesetz sagt einen linearen Zusammenhang zwischen Dehnung $\epsilon$ und Dehnung $\sigma$ voraus. Das gilt für Metalle allerdings nur in einem gewissen Bereich da bei zu großen Belastungen plastische Verformungen auftreten. Die Proportionalitätakonstante zwischen den beiden Größen ist der Elastizitätsmodul. Im Bereich des Hooke'schen Gesetzes sind die Deformationen reversibel. Das Hooke'sche Gesetz lautet:
+\begin{equation}\label{eq:Hooke_Gesetz}
+    \sigma = E \cdot \epsilon
+\end{equation}
+\end{addmargin} 
+
+
+\end{document}

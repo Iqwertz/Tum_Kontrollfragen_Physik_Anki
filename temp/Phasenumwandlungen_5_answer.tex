@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+In den Gleichungen \ref{eq:kritischer_Radius} und \ref{eq:Aktivierungsenergie} ist $\Delta G_V$ temperaturabhängig und $\gamma$ nicht. Für die Temperaturabhängigkeit von $\Delta G_V$ nutzt man folgenden Zusammenhang:
+\begin{equation}\label{eq:Umwandlungswärme}
+    \Delta G_V = \frac{\Delta H_f \cdot (T_S - T)}{T_S}
+\end{equation}
+dabei ist $T_S$ die Schmelztemperatur und $\Delta H_f$ die bei Erstarrung freigesetzte Wärmemenge. Eingesetzt in die Gleichungen  \ref{eq:kritischer_Radius} und \ref{eq:Aktivierungsenergie} ergibt das:
+\begin{align}
+    r^* &= \left( - \frac{2\gamma T_S}{\Delta H_f}\right) \frac{1}{T_S - T}\\
+    \Delta G^* &= \left( \frac{16\pi \gamma^3 T_S^2}{3(\Delta H_f)^2}\right) \frac{1}{(T_S - T)^2} 
+\end{align}
+Die Anzahl der stabilen Keime (für diese gilt: $r>r^*$) ist gegeben mit:
+\begin{equation}
+    n^* = K_1 \exp(-\frac{\Delta G^*}{k_BT})
+\end{equation}
+\end{addmargin}
+
+\end{document}

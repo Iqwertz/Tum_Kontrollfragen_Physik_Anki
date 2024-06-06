@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Die Diffusionsstromdichte ist proportional zum Konzentrationsgradienten. 
+\begin{equation}\label{eq:Fick1}
+    \mathbf{J}(x,y,z) = -D\cdot \nabla c(x,y,z) 
+\end{equation}
+Die Proportionalitätskonstante ist der Diffusionskoeffizient $D$ mit der Einheit $\left[ \frac{\si{m}^2}{\si{s}}\right]$. Der Diffusionskoeffizient ist eine Stoffeigenschaft die von den beiden beteiligten Stoffen abhängt. Den Zusammenhang in Gleichung \ref{eq:Fick1} nennt man \textit{1. Fick'sches Gesetz}. Das Minuszeichen in dieser Gleichung besagt, dass der Diffusionsstrom von Orten hoher Konzentration zu Orten niedriger Konzentration geht.\\
+\end{addmargin} 
+
+\end{document}

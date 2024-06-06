@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}     
+Die metallische Bindung ist stark und nicht-orientiert, dadurch bilden Metalle bevorzugt Kristallgitter aus, welche hohe Packungsdichten aufweisen. Die häufigsten Strukturen sind das hcp- und das fcc-Gitter, diese haben jeweils die Koordinationszahl 12 und die Packungsdichte 0,75. In der hcp-Struktur befinden sich 6 Gitterpunkte in der konventionellen Einheitszelle, wichtige Elemente die in der hcp-Struktur kristallisieren sind Magnesium, $\alpha$-Titan und Zink. In der fcc-Struktur hingegen befinden sich 4 Gitterpunkte in der konventionellen Einheitszelle, wichtige Vertreter dieser Struktur sind Aluminium, $\gamma$-Eisen, Kupfer und Nickel. Außerdem ist die bcc-Struktur erwähnenswert, diese hat zwar nur eine Packungsdichte von 0,68 allerdings kristallisieren dennoch einige Metalle in dieser Struktur wie zum Beispiel $\alpha$-Eisen, Molybdän, $\beta$-Titan oder Chrom. \\
+\end{addmargin}
+
+\end{document}

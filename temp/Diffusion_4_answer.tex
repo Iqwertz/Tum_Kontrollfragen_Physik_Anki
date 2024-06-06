@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Das zweite Fick'sche Gesetz lautet in einer Dimension:
+\begin{equation}\label{eq:Fick2}
+    \frac{\partial c}{\partial t} + \frac{\partial J}{\partial x} = 0
+\end{equation}
+In 3 Dimensionen wird die örtlichen Ableitung in Gleichung \ref{eq:Fick2} mit dem Gradienten ersetzt. Das zweite Fick'sche Gesetz besagt, dass die Differenz der Teilchenströme die in ein Volumen hinen- bzw. hinausfließen der Änderung der Konzentration im Volumen entspricht.\\
+Man kann \ref{eq:Fick2} und Gleichung \ref{eq:Fick1} kombinieren un derhält eine Alternative Formulierung für das zweite Fick'sche Gesetz:
+\begin{equation}\label{eq:Fick2_Alternative}
+    \frac{\partial c}{\partial t} = D \Delta c
+\end{equation}
+Dabei ist $\Delta$ der Laplace-Operator der die zweiten örtlichen Ableitungen erhält. Das zweite Fick'sche Gesetz ist also eine partielle Differentialgleichung für die Stoffmengenkonzentration.\\
+\end{addmargin} 
+
+\end{document}

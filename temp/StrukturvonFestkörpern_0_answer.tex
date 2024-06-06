@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Korngrenzen entstehen wenn verschiedene Kristallkeime wachsen und größere, geordnete Kristallite bilden. Da diese Kristallite im Allgemeinen beliebig orientiert sein können wird an der Grenzfläche zwischen zwei Kristalliten die Ordnung der Einzelkristallite nicht fortgesetzt. Diese Grenze nennt man Korngrenze.
+\begin{figure}[h]
+    \centering
+     \includegraphics[width = 0.6\textwidth]{images/Materialwissenschaften/Korngrenzen.jpeg}
+    \caption{Die Entstehung von Korngrenzen aufgrund des Kristallwachstums}
+    \label{fig:Korngrenzen}
+\end{figure}
+\end{addmargin}
+
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Stahl ist eine Legierung aus Eisen und Kohlenstoff bei der Kohlenstoff mit einem Massenanteil von $0,008-2,14 \%$ auftritt. Wohingegen Gusseisen einen deutlich höheren Kohlenstoffanteil mit $2,14-6,70 \%$ hat. Die Mikrostruktur von Stahl ist sehr charakteristisch, andererseits kann die Mikrostruktur von Gusseisen verschiedene Formen annehmen. In Gusseisen liegt der Kohlenstoff als Graphit vor und in Stahl ist er eingelagert, entweder in der $\alpha$-Phase oder in Zementit \ce{Fe3C} \\
+\end{addmargin}
+
+
+\end{document}

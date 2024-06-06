@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Viskoelastische Polymermaterialien weisen ein stark temperatur- und zeitabhängiges Verhalten auf. Bei ihnen nimmt der Elastizitätsmodul mit der Zeit ab, wenn man instantan eine konstante Dehnung $\epsilon_0$ anlegt. Diese Zeitabhängigkeit wird durch den Relaxationsmodul $E_r$ beschrieben:
+\begin{equation}\label{eq:Relaxationsmodul}
+    E_r(t) = \frac{\sigma (t)}{\epsilon_0}
+\end{equation}
+Der Relaxationsmodul hängt ebenfalls von der Temperatur ab, da eine höhere Temperatur die Fließeigenschaften des Materials begünstigt sinkt $E_r$ mit steigender Temperatur.\\
+\end{addmargin}
+
+\end{document}

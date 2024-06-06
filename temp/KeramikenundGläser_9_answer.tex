@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Bei der Herstellung von Gläsern wird die Schmelze gekühlt, ab der Schmelztemperatur beginnt dann die Kristallisation und es entsteht ein kristalliner Feststoff, dessen spezifisches Volumen deutlich geringer ist als man es für Glas erwartet, tritt dieser Fall ein hat die Glaserstellung nicht funktioniert, weil zur Glasherstellung keine Kristallisation auftreten soll. Schafft man es die Kristallisation bei der Schmelztemperatur zu unterdrücken, so wird man ab der Glasübergangstemperatur einen fließenden Übergang von Schmelze zu Glas beobachten. Trägt man das Spezifische Volumen gegen die Temperatur auf so wird bei der erfolgreichen Herstellung von Glas an der Glasübergangstemperatur eine stetige aber nicht differenzierbare Stelle zu sehen sein. Stellt man jedoch einen kristallinen Feststoff her so erkennt man bei der Schmelztemperatur und Unstetigkeit. \\
+\end{addmargin}
+
+\end{document}

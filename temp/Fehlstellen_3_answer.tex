@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}    
+Die Konzentration der Leerstellen steigt stark mit der Temperatur an, besonders bei der Schmelztemperatur steigt die Anzahl der Leerstellen rasant. In der festen Phase treten Leerstellen auf da sie die Entrropie des Systems erhöhen. Die Anzahl an Leerstellen $N_V$ in der festen Phase ist: 
+\begin{equation}\label{eq:Anzahl_Leerstellen}
+    N_V = N\cdot e^{\frac{Q_y}{k_BT}}
+\end{equation}
+dabei ist $Q_y$ die Energie die zur Erzeugung einer Leerstelle nötig ist, $T$ die Temperatur und $k_B$ die Boltzmann-Konstante\\
+\end{addmargin}
+
+\end{document}

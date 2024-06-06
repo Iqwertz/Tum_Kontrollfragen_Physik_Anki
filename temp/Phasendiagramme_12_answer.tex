@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Bei Raumtemperatur liegt Eisen als Ferrit oder $\alpha$-Eisen vor, dieses hat eine bcc-Struktur und Kohlenstoff ist darin nur schlecht löslich da in der bcc-Struktur nur wenig Zwischengitterplätze vorhanden sind auf denen sich Kohlenstoff einlagern könnte. Ferrit ist relativ weich und bis $768^\circ $C ferromagnetisch. Ab einer Temperatur von $912^\circ$C wandelt sich Ferrit allotrop in Austenit oder $\gamma$-Eisen um, dieses besitzt eine fcc-Struktur wodurch sich Kohlenstoff sehr gut in ihm lösen lässt. Austenit ist nicht ferromagnetisch. Im Temperaturbereich $1394^\circ$C bis $1538^\circ$C hat Eisen wieder eine bcc-Struktur und ähnliche Eigenschaften zu Ferrit, daher nennt man diese Form von Eisen auch $\delta$-Ferrit. Bei noch höheren Temperaturen schmilzt reines Eisen.\\
+\end{addmargin}
+
+\end{document}

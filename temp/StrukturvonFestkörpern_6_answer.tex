@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}     
+Ionische Kristalle bilden entweder eine einfach kubische (sc), kubisch flächenzentrierte (fcc) oder eine Zinkblendenstruktur aus. Jeder Ionenkristall versucht dabei den Abstand zwischen entgegengesetzt geladenen Ionen zu verringern, dadurch ist das Verhältnis der Ionenradien ein relevanter Faktor dafür welche Kristaallstruktur für den jeweiligen Kristall am geeignetsten ist. Im Folgenden ist $R_k$ der Radius des Kations und $R_a$ der Radius des Anions. Im Fall von $\frac{R_k}{R_a} > 0,72$ bildet sich ein sc-Kristall wie bei Caesiumchlorid (CsCl), wenn $0,33 < \frac{R_k}{R_a} < 0,72$  dann bildet sich wie bei Natriumchlorid eine fcc-Struktur und für $\frac{R_k}{R_a} < 0,33$ bildet sich eine Zinkblendenstruktur \\
+\end{addmargin}
+
+\end{document}

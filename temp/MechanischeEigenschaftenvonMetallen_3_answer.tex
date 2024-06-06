@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Rückfederung nennt man den Prozess der im elastischen Bereich auftritt. Durch die Dehnung wird die Kristallstruktur gedehnt und somit Energie gespeichert. Diese Energie kann dann vollständig reversibel wieder abgegeben werden und der Probenkörper kehrt in seine ursprüngliche Form zurück. Zur Charakterisierung dieses Verhaltens nutzt man den Rückfederungsmodul $E_r$, welcher angibt wie viel Energie pro Volumeneinheit vom Kristall absorbiert wurde. Er ist definiert als die Fläche unter der Spannungs-Dehnungs-Kurve bis zur Streckgrenze $\sigma_y$: 
+\begin{equation}\label{eq:Rückfederungsmodul}
+    E_r = \int\limits_0^{\epsilon_y}\sigma\; \si{d}\epsilon = \frac{1}{2}\sigma_y\epsilon_y = \frac{\sigma_y^2}{2E}
+\end{equation}
+Das bedeutet, dass man für Federn ein Material verwenden sollte, welches einen niedrigen Elastizitätsmodul und eine hohe Streckgrenze besitzt damit der Rückfederungsmodul maximiert wird.\\
+\end{addmargin}
+
+\end{document}

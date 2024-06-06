@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+An einer Rissspitze kommt es zu einer lokalen Spannungsüberhöhung, das bedeutet, dass dort die Spannung $\sigma_m$ deutlich höher ist als die nominal anliegende Spannung $\sigma_0$:
+\begin{equation}\label{eq:Spannung_Rissspitze}
+\sigma_m = 2\sigma_0 \left( \frac{a}{\rho_t}\right)^\frac{1}{2}
+\end{equation}
+wobei $a$ die halbe Länge des inneren, elliptischen Risses ist und $\rho_t$ der Krümmungsradius an der Riss-Spitze. Der Faktor $\frac{a}{\rho_t}$ kann sehr hohe Werte annehmen für einen langen dünnen Riss.\\
+\end{addmargin}
+
+\end{document}

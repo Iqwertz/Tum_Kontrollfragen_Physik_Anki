@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}     
+In dem Zwischenbereich zwischen der kristallinen und der flüssigen Phase kann ein Körper verflüssigen aber dennoch eine gewisse Ordnung beibehalten. Dieses Zwischenstadium von Kristall und Flüssigkeit nennt man Flüssigkristall. Die verbleibende Ordnung kann in zwei Arten auftreten: in Positionsordnung, also die Moleküle haben noch einen festen Platz in der Flüssigkeit und in Orientierungsordnung, also die Moleküle haben eine vorgeschriebene Orientierung. In der Optik werden Flüssigkristalle häufig verwendet da sie doppelbrechend sind.\\
+\end{addmargin}
+
+\end{document}

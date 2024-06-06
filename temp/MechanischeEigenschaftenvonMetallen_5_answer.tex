@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Die Spannung $\sigma$ wurde ursprünglich definiert als wirkende Kraft pro Fläche auf die diese Kraft wirkt. Dabei wurde angenommen, dass die Querschnittsfläche der Probe konstant bleibt. Das ist allerdings allgemein nicht der Fall wodurch es Sinn ergibt die wahre Spannung $\sigma_w$ als Kraft pro aktueller Querschnittsfläche $A_i$ zu definieren. Ebenso muss man die Dehnung auch anpassen es ergibt sich: 
+\begin{align}\label{eq:wahre_Spannung}
+    \sigma_w &= \frac{F}{A_i}\\\label{eq:wahre_Dehnung}
+    \epsilon_w &= \int\limits_{l_0}^{l_i} \frac{\si{d}l}{l} = \ln \frac{l_i}{l_0}
+\end{align}
+Der Wert der praktischen Spannung ist praktisch, da er das intuitiv erwartete Verhalten, dass die Spannung oberhalb der Zugfestigkeit weiter steigt, aufweist. Bis Einschnürung auftritt kann man die wahre Spannung und Dehnung noch mit den technischen Größen $\sigma$ und $\epsilon$ in Verbindung setzen:
+\begin{align}\label{eq:wahre_Spannung_mit_technischen_Größen}
+    \sigma_w &= \sigma(1+\epsilon)\\ \label{eq:wahre_Dehnung_mit_technischen_Größen}
+    \epsilon_w &= \ln (1+\epsilon)
+\end{align}
+\end{addmargin}
+
+\end{document}

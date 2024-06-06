@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Beim Zugversuch mit angelegter Kraft in z-Richtung wird der Körper in x- und y-Richtung seinen Querschnitt verringern. Dabei wird angenommen, dass die Dehnungen in Querrichtung gilt: $\epsilon_x = \epsilon_y$. Die Poisson-Zahl ist das Verhältnis der Querdehnung zur Längsdehnung:
+\begin{equation}\label{eq:Definition_Poisson_Zahl}
+\nu = -\frac{\epsilon_x}{\epsilon_z}
+\end{equation}
+Das negative Vorzeichen kommt daher, dass die Querdehnung kleiner als null ist. Unter der Annahme, dass sich das Volumen des Körpers beim Zugversuch nicht ändert müsste für die Poisson-Zahl $\nu = \frac{1}{2}$ gelten. Allerdings zeigen Experimente, dass diese Annahme nicht berechtigt ist und die Poisson-Zahl für isotrope Materialien ungefähr $\frac{1}{4}$ ist.\\ 
+\end{addmargin} 
+
+
+\end{document}

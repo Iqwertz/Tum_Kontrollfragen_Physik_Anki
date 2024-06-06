@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Ein Phasendiagramm eines binären eutektischen Systems ist in Abbildung \ref{fig:Phasendiagramm_eutektisch} gezeigt. Eutektische Systeme zeichnen sich dadurch aus, dass sie 3 Phasen besitzen, zwei feste und eine flüssige. Die festen Phasen sind hier $\alpha$ und $\beta$ und die flüssige Phase wird als $L$ bezeichnet. Da es 3 Phasen gibt, existieren auch 3 Zweiphasengebiete. Ein weiteres Merkmal von eutektischen Systemen ist, dass die Schmelztemperatur der reinen Materialien höher ist als der Legierungen, die geringste Schmelztemperatur tritt am eutektischen Punkt $E$ auf. An diesem Punkt wird bei konstanter Temperatur die gesamte Schmelze in die beiden festen Phasen umgewandelt. Es gibt kein Dreiphasengebiet.\\   
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{images/Materialwissenschaften/eutektisch_Phasendiagramm.jpeg}
+    \caption{Phasendiagramm eines binären eutektischen Systems.}
+    \label{fig:Phasendiagramm_eutektisch}
+\end{figure}
+\end{addmargin}
+
+\end{document}

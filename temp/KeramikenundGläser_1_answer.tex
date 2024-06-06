@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{amssymb}
+\usepackage{siunitx,physics}
+\usepackage{mathtools}
+\usepackage{graphicx}
+%\usepackage{Here}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2cm]{geometry}
+[biblography=totocnumbered]
+\usepackage{fancyhdr}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\pagenumbering{gobble}
+
+\makeatletter
+\newcommand\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\makeatletter
+%\renewcommand*\bib@heading{%
+%  \subsection*{}%
+%  \@mkboth{\refname}{\refname}}
+%\makeatother
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\renewcommand{\labelitemii}{\labelitemfont$\vartriangleright$}
+\begin{document}\\
+\begin{addmargin}[25pt]{0pt}
+Bei einem ionischen Bindungscharakter sind die Beträge der elektrischen Ladungen und das Größenverhältnis von Kation zu Anion relevant für die Kristallstruktur. Stabile Kristalstrukturen zeichnen sich dabei dadurch aus, dass die als feste Kugeln angenommenen Ionen in Kontakt zueinander stehen und dabei immer Kation und Anion sich berühren. Damit ergeben sich in Abhängigkeit des Radienverhältnisses $\frac{r_K}{r_A}$ verschiedene mögliche Kristallstrukturen:
+\begin{align*}
+    \frac{r_K}{r_A} &= 0,225-0,414 \rightarrow \text{Koordinationszahl 4, Tetraeder}\\
+    \frac{r_K}{r_A} &= 0,414-0,732 \rightarrow \text{Koordinationszahl 6, Oktaeder}\\
+    \frac{r_K}{r_A} &= 0,732-1     \hspace{0.75cm}\rightarrow \text{Koordinationszahl 8, Würfel}
+\end{align*}\\
+\end{addmargin}
+
+\end{document}

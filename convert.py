@@ -120,6 +120,7 @@ chapterCounter = 0
 for chapter in qaChapters:
     sanitizedChapter = chapter.replace(" ", "")
     counter = 0
+    chapterCounter += 1
     sortedDeck = genanki.Deck(
       random.randint(0, 100000),
       "TUM " + inputFilename + " Kurzfragen (sortiert)::" + str(chapterCounter) + ": " + chapter
@@ -180,3 +181,7 @@ sortedPackage.write_to_file(inputFilename + "_sorted.apkg")
 unsortedPackage = genanki.Package(unsortedDeck)
 unsortedPackage.media_files = mediaFiles
 unsortedDeck.write_to_file(inputFilename + ".apkg")
+
+
+#delete temp folder
+os.system("rm -rf temp")

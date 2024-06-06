@@ -1,3 +1,15 @@
+# Converter for LaTeX to Anki
+
+This code converts LaTeX files to Anki cards. The LaTeX files must be formatted in a specific way. The code extracts the questions and answers from the LaTeX files and creates a CSV file that can be imported into Anki.
+
+The code here is specifically written for the "Vertiefungs" Modules of the TUM Physics Bachelor. The LaTeX files are made by Andre Scholz.
+
+# Get the Anki cards
+
+The newest version of the anki cards can be found in the release section of this repository.
+
+# Develop
+
 ## Requirements
 
 The code is written for Linux and requires the following packages:
@@ -6,11 +18,12 @@ The code is written for Linux and requires the following packages:
 - dvipng
 - imagemagick
 - optipng
+- latex2png (sudo apt-get install latex2rtf)
 
-Converted with: https://github.com/mneri/pnglatex/blob/master/pnglatex
+## Convert
 
-for pnglatex the execution flag must be set with `chmod +x pnglatex`
+To convert the LaTeX files to Anki cards, run the following command:
 
-pnglatex -d 800 -m 10 -s 20 -f "\\noindent\\textbf{4. Wie ändert sich die Exergie eines Systems A, wenn dieses System eine Wärmemenge $Q$ isotherm aufnimmt oder abgibt?}\\" -H header.tex -l output.log
-
-install latex2png with `sudo apt-get install latex2png`
+```bash
+python3 convert.py [name_of_the_LaTeX_file]
+```

@@ -497,17 +497,40 @@ Paramagnetismus tritt nur in Materialien auf, welche ungepaarte Atome besitzen u
 
 \noindent\textbf{9. Wie hängen Diamagnetismus und Kernladungszahl zusammen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Diamagnetismus tretet nur in Isolatoren mit vollbestezten Elektronen auf. Die magnetische Suszeptibilität ist proportional zu der Anzahl der Elektronen in der äußersten Schale. Somit erhält man auch eine Abhängigkeit von der Kernladungszahl, da diese die Elektronenanzahl bestimmt.
+\begin{equation}
+    \chi_{dia} \approx -\mu_{0}\frac{e^2}{6m}\frac{N}{V}Z_{a}r^2_{a}
+\end{equation}\\
 \end{addmargin}
 
 \noindent\textbf{10. Was beschreibt die Langevin-Gleichung?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Langevin-Gleichung (\ref{eq:Langevin}) beschreibt das Verhältnis zwischen Magnetisierung und Sättigungsmagnetisierung von Paramagneten. Dieses Verhältnis entspricht der Anzahl der ausgerichteten magnetischen Momente. Für die Herleitung dieser Gleichung wurde angenommen, dass sich alle magnetischen Momente mit einem beliebigen Winkel ausrichten können (also klassische Betrachtung). Die Langevin-Gleichung ist in guter Nährung für große Quantenzahlen gültig.
+\begin{equation}
+    \frac{M}{M_{s}} = \frac{<\mu_{z}>}{\mu} = \coth{\frac{\mu B}{k_{B}T}} - \frac{k_{B}T}{\mu B} \equiv \mathcal{L} \left(\frac{\mu B}{k_{B}T}\right)
+    \label{eq:Langevin}
+\end{equation}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{images/KM2/Langevin-Velauf.png}
+    \caption{Magnetisierung bei Paramagneten mit Langevin-Gleichung}
+    \label{fig:Magnetisierung-Paramag}
+\end{figure}\\
 \end{addmargin}
 
 \noindent\textbf{11. Was beschreibt die Brillouin Funktion?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Briullin-Funktion (\ref{eq:Briullin-Fkt}) ist das quantenmechanische Analogon zur Langevin-Gleichung. Die Voraussetzung dieser Gleichung ist, dass der Gesamtdrehimpuls $J>1/2$ ist. Es wurde die Abkürzung $y=\frac{g_{j}\mu_{B}B_{ext}}{k_{B}T}J$ verwendet. In Abbildung (\ref{fig:Briullin-Verlauf}) sieht man den Unterschied zwischen der Briullin-Funktion und Langevin-Funktion.  
+\begin{equation}
+    \frac{M}{M_{s}} = \mathcal{B}_{J}(y) = \frac{2J+1}{2J}\coth{\frac{2J+1}{2J}y} -\frac{1}{2J} \coth{\frac{1}{2J}y}
+    \label{eq:Briullin-Fkt}
+\end{equation}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{images/KM2/Briullin-Verlauf.png}
+    \caption{vergleich zwischen Briullin- und Langevin-Verlauf.}
+    \label{fig:Briullin-Verlauf}
+\end{figure}\\
 \end{addmargin}
 
 \noindent\textbf{12. Was versteht man unter Curie-Verhalten?}\\
@@ -521,127 +544,177 @@ Dabei ist $C = \mu_0\frac{N}{V}\frac{(g_j\mu_B)^2}{3}\frac{j(j+1)}{k_B}$ die Cur
 
 \noindent\textbf{13. Was ist van Vleck Paramagnetismus?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Der van Vleck Paramagnetismus beschreibt den Beitrag zur Magnetisierung, der ein gestörtes Grundzustand erzeugt. Bei einem atomaren System mit einem Grundzustand ohne magnetisches Moment kann der Grundzustand mit einem angeregtem Zustand koppeln, wodurch ein neuer, gestörter Grundzustand entsteht. Falls der Energieunterschied zwischen angeregtem- und Grundzustand viel größer als $k_{B}T$ ist, so ist fast ausschließlich der gestörte Grundzustand besetzt. Somit erhalten wir einen paramagnetischen Beitrag zur Suszeptibilität:
+\begin{equation}
+    \chi = \frac{2n\mu_{0}\mu_{B}^2}{E_{n}-E_{0}}|\braket{n|(\hat{\boldsymbol{L}}_{z}+g_{s}\hat{\boldsymbol{S}}_{z})|0}|^2
+    \label{eq:van-Vleck}
+\end{equation}\\
 \end{addmargin}
 
 \noindent\textbf{14. Was besagen die Hund'schen Regeln für die magnetischen Momente von Atomen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Für magnetische Momente von Atomen ist die 2. Hund'sche Regel, welche besagt, dass der Gesamtspin $\boldsymbol{S}$ maximiert wird, von Bedeutung. Die magnetischen Quantenzahlen können verschiedene Werte $m_{l} = (-l,l)$ einnehmen. Die Spins der einzelnen Elektronen richten sich mäglichst parallel aus.\\
 \end{addmargin}
 
 \noindent\textbf{15. Was versteht man unter Kristallfeldern?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Ein Kristallfeld ist ein fiktives Feld im Festkörper, dieser beschreibt die endliche Austauschwechselwirkung zwischen den Atomen.  \\
 \end{addmargin}
 
 \noindent\textbf{16. Welchen Einfluss haben die Kristallfelder auf die magnetischen Eigenschaften?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Kristallfelder bewirken die gleiche magnetische Ordnung wie die vorliegende Austauschwechselwirkung.  \\
 \end{addmargin}
 
 \noindent\textbf{17. Was sind high-spin und low-spin Zustände bei Eisen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Im Fall von d-Orbitalen gibt es zwei Möglichkeiten sie zu besetzen. Ist die Aufspaltung gering, so erfolgt die Besetzung nach den Hund'schen Regeln, was zu einem hohen Gesamtspin führt. Man spricht von einem hign-spin-Zustand. Ist hingegen die Aufspaltung groß gegenüber der Spinpaarungsenergie, so werden zunächst energieärmere Orbitale doppelt besetzt. Dies führt zu einen niedrigerem Gesamtspin und man spricht von einem low-spin-Zustand. Zum Beispiel besitzt Fe$^{3+}$ eine d$^{5}$-Konfiguration. Es kann sich einen Gesamtspin von S = 1/2 oder S = 5/2, je nach Ligand, einstellen.\\
 \end{addmargin}
 
 \noindent\textbf{18. Was versteht man unter \glqq orbitalem Quenchen\grqq ?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+In einem Kristallfelderd wird die Symmetrie der Orbitale durch Anwesenheit von NAchbaratomen gestört. Somit kann die Entartung der Orbitale aufgehebt werden. Dadurch wird auch das magnetische Moment \glqq gelöscht \grqq. Dies nennt man orbirales Quenchen.\\
 \end{addmargin}
 
 \noindent\textbf{19. Was ist der Jahn-Teller-Effekt?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Der Jahn-Teller-Effekt beschreibt die Verzerrung in bestimmten Moleküle. Wenn ein Molekül oder ein Komplex in einem symmetrischen Zustand mehrere Elektronen in energetisch degenerierten Orbitale hat, kann es instabil sein. Durch eine symmetriebrechende Verzerrung kann die Entartung der Orbitale aufgehoben werden um das System energetisch zu stabilisieren.\\
 \end{addmargin}
 
 \noindent\textbf{20. Welche Rolle spielen dipolare Wechselwirkungen für die magnetische Ordnung?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die dipolare Wechselwirkung spielt eine wichtige Rolle bei der magnetischen Ordnung in Festkörpern. Sie tritt zwischen magnetischen Momente von Atomen, Ionen oder Moleküle auf und beeinflusst die Ausrichtung. Diese Wechselwirkung ist abeer zu schwach um alleine magnetische Ordnung zu erzeugen. Man muss sie aber trotzdem berücksichtigen, da sie bei tiefen Temperaturen doch magnetische Ordnungsphänomene verursachen kann.\\
 \end{addmargin}
 
 \noindent\textbf{21. Was versteht man unter Austauschwechselwirkung?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Austauschwechselwirkung erhöht oder erniedrigt die Energie eines physikalischen Systems aus mehreren wechselwirkenden identischen Teilchen gegenüber dem Wert, für dem Fall, dass es sich um nicht identische Teilchen handeln würde. Sie wird oft mit dem Pauli-Prinzip in Verbindung gebracht, ist aber ein unabhängiges Phänomen. Sie liegt immer vor, nur der Vorzeichen hängt davon ab, ob die Teilchen dem Pauli-Prinzip gehorchen.  \\
 \end{addmargin}
 
 \noindent\textbf{22. Was beschreibt das Heisenberg-Modell?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Das Heisenberg-Modell beschreibt den Ferro-, Antiferro- und Ferrimagnetismus in Isolatoren. Hierzu werden alle möglichen Paarwchselwirkungen in einem Festkörper aufsummiert. Man erhält einen spinabhängigen Hamilton-Operator (\ref{eq:Heisenberg-Mod}), der diesen Vorgang beschreibt. Hier beschreibt $J_{A}^{ij}$ die Austauschwechselwirkung.
+\begin{equation}
+    \mathcal{H} = -\sum_{j\neq i, i>j} J^{ij}_{A} \frac{1}{\hbar^2} \boldsymbol{S}_{i} \cdot \boldsymbol{S}_{j}
+    \label{eq:Heisenberg-Mod}
+\end{equation}\\
 \end{addmargin}
 
 \noindent\textbf{23. Was sind direkter und indirekter Austausch?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
+%\begin{addmargin}[25pt]{0pt}
+\begin{itemize}
+    \item \textbf{direkter Austausch}: Wechselwirkung, die aus der direkten Überlappung der Wellenfuktion der Gitteratome mit magnetischen Momente resultiert.
+    \item \textbf{indirekter Austausch}: Wechselwirkung, die über einen Vermittler zustande kommt. Die magnetichen Momente stehen nicht in Kontakt. Beispiele dafür ist die RKKY-WW und Superaustausch.
+\end{itemize} 
+%\end{addmargin}
 
 \noindent\textbf{24. Was sind Superaustausch, Doppelaustausch und anisotroper Austausch?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
+%\begin{addmargin}[25pt]{0pt}
+\begin{itemize}
+    \item \textbf{Superaustausch}: Wechselwirkung zwischen den magnetischen Momenten der Gitteratomen über Orbitale von dazwischenliegenden diamagnetischen Atome/Ionen. Der Superaustausch kann durch den Heisenberg-Modell beschieben werden. Es muss aber die Austauschkonstanste verändert werden.
+    \item \textbf{Doppelaustausch}: Ist änhlich zum Superaustausch. Hier haben aber die Ionen unterschiedliche Valenzen. Ein Elektron kann vom Vermittler zu einem Ion hüpfen, wobei sein Platz ein Elektron vom anderen Ion eingenommen wird. Also hüpft effektiv ein Elektron von einem Ion zum Anderen ohne dabei die Spinrichtung zu wechseln.
+    \item \textbf{anisotroper Austausch (DM-WW)}: Betrachten wir 2 Spins. Der anisotrope Austausch versucht beide Spins aus einer kollinearen Anordnung herauszukippen, da ihr Beitrag ansonsten verschwindet.
+\end{itemize}
+%\end{addmargin}
 
 \noindent\textbf{25. Welche Annahmen macht das Weiss-Modell des Ferromagnetismus?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Beim Ferromagnetismus nimmt das Weiss-Modell (auch Molekularfeldnährung genannt), dass zusätlich zum äußeren Magnetfeld noch ein inneres Feld $B_{A}$ wirkt, durch das die endliche Austauschwechselwirkung erfasst wird.\\
 \end{addmargin}
 
 \noindent\textbf{26. Welchen Einfluss hat ein Magnetfeld auf Ferromagnetismus?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Ein Magnetfeld richtet die Domänen des Ferromagneten aus, was die Gesamtmagnetisierung erhöht.\\
 \end{addmargin}
 
 \noindent\textbf{27. Was ist ein Molekularfeld im Weiss-Modell?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Das Molekularfeld im Weiss-Modell ist ein theoretisches Konzept, das verwendet wird, um den Ferromagnetismus in Materialien zu erklären. Weiss führte das Konzept eines effektiven internes Feld ein, das jedes magnetische Moment aufgrund der Wechselwirkungen mit den benachbarten Momenten erfährt. Das Molekularfeld ist dabei proportional zur Gesamtmagnetisierung des Materials.
+\begin{equation}
+    H_{\text{m}} = \lambda M
+    \label{eq:Weiss-Feld}
+\end{equation}\\
 \end{addmargin}
 
 \noindent\textbf{28. Was beschreibt die \glqq staggered magnetization\grqq ?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die gestaffelte Magnetisierung beschreibt die Magnetisierung die entsteht, wenn die magnetischen Momente der Atome in einam alternierendem Muster angeordnet sind (wichtig bei antiferromagnerische Materialien). Sie beschreibt der Unterschied in der Magnetisierung zwischen den zwei Subgittern, die durch antiparallele Anordnung der Spins gebildet werden. (Man teilt Gitter in 2 Subgitter ein. Im Subgitter sind Spins parallel angeordnet \ref{fig:gestaffelt}.)
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{images/KM2/gestaffelt.png}
+    \caption{Einteilung in Subgitter.}
+    \label{fig:gestaffelt}
+\end{figure}\\
 \end{addmargin}
 
 \noindent\textbf{29. Was sind ein \glqq Spin-Flop\grqq\; und ein \glqq Spin-Flip\grqq \; Übergang?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Legen wir ein starkes Magnetfeld an einem Antiferromagnet an. Für genügend große Feldstärken dominiert das äußere Feld und die magnetischen Momente richten sich alle parallel aus. Falls das Magnetfeld parallel zu den magnetischen Momenten angelegt wird, so bleiben sie in Reihe bei kleinen Feldstärken. Bei höheren Feldstärken hingegen nehme sie die Konfiguration wie in Abbildung (\ref{fig:Spin-Flop}) b) ein. Bei noch höheren Feldstärken werden die Winkel $\phi$ und $\theta$ immer kleiner, bis die Momente parallel zum Feld liegen. Falls aber der anisotropen Effekt groß ist, so richten sich die Momente eines Subgitters nach dem Feld aus. Es erfolgt also in einem Schritt der Übergang zur ferromagnetischen Phase.\\
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{images/KM2/Spin-Flop.png}
+    \caption{Spin-Flop Konfigurationen.}
+    \label{fig:Spin-Flop}
+\end{figure}
 \end{addmargin}
 
 \noindent\textbf{30. Welche Rolle spielen Symmetriebrechungen bei magnetischer Ordnung?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Symmetriebrechungen spielen eine zentrale Rolle bei magnetischer Ordnung. Sie bestimmen die Art und Weise, wie magnetische Momente in einem Material organisiert sind. Bei Phasenübergänge (z.B. von PM- zu FM-Phase) wird eine Symmetrie des Systems gebrochen.\\
 \end{addmargin}
 
 \noindent\textbf{31. Was versteht man unter einem Ordnungsparameter?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Ordnungsparameter dienen der Beschreibung des Zustandes eines physikalischen Systems während eines Phasenübergangs. Wie der Name deutet ist der Ornungsparameter ein Maß für Ordnung in einem System.\\
 \end{addmargin}
 
 \noindent\textbf{32. Was versteht man unter Landau-Theorie und was unter Molekularfeldtheorie?}\\
+\begin{itemize}
+    \item \textbf{Landau-Theorie}: Beschreibt Phasenübergänge durch die polynomiielle Entwicklung der freinen Enthalpie als Funktion des Ordnungsparameters. 
+    \item \textbf{Molekularfeldtheorie}: Ist eine Nährung, die Systeme von miteinander wechselwirkenden Teilchen als System freier Teilchen in einem externem Feld betrachtet. Das externe Feld ist als konstant angesehen (Fluktuationen werden vernachlässigt). 
+\end{itemize}
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+    Beide Theorien sind miteinander verbindet, da die Landau-Theorie auch einen \glqq mean-field \grqq Theorie ist. Es werden also die Fluktuationen des Ordnungsparameters nicht berücksichtigt (können in Nähe des Phasenübergangs eine bedeutende Rolle spielen). 
 \end{addmargin}
 
 \noindent\textbf{33. Was versteht man unter dem Ising-Modell?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Das Ising-Modell ist das Heisenberg-Modell für einer Dimension. Die Spinkomponenten können daher bloß parallel oder antiparallel zur Quantisierungsachse stehen.
+\begin{equation}
+    \mathcal{H}_{Ising} = -\sum_{j\neq i, i>j} J^{ij}_{A} \frac{1}{\hbar^2} (\boldsymbol{S}_{z})_{i} \cdot (\boldsymbol{S}_{z})_{j}
+\end{equation}\\
 \end{addmargin}
 
 \noindent\textbf{34. Was sind Magnonen und wie sieht deren Dispersion aus?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Ein Magnon ist ein kollektiver Anregungszustand eines magnetischen Systems mit Eigenschaft eines bosonischen Quasiteilchens. Für deren Disperionsrelation muss man zwischen ferro- und antiferromagnetische Phononen unterscheiden. In Gleichung (\ref{eq:Magnon-Ferr}) sieht man die quadratische Abhängigkeit für ferromagnetische Magnonen und in Gleichung (\ref{eq:Magnon-Antiff}) die lineare Abhängigkeit für antiferromagnetische Magnonen.
+\begin{equation}
+    \hbar \omega = 4JS(1-\cos(ka))
+    \label{eq:Magnon-Ferr}
+\end{equation}
+\begin{equation}
+    \hbar \omega \approx k
+    \label{eq:Magnon-Antiff}
+\end{equation}\\
 \end{addmargin}
 
-\noindent\textbf{35. Was beschreibt das Bloch $T^{\frac{3}{2}}$-Gesetz?}\\
+\noindent\textbf{35. Was beschreibt das Bloch'sche T hoch 3 Halbe-Gesetz?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Das Bloch'sche $T^{\frac{3}{2}}$-Gesetz beschreibt den Magnonen-Beitrag zur spezifischen Wärme.
+\begin{equation}
+    c_{\text{Mag}} \propto T^{3/2}
+    \label{eq:Bloch-T-Ges}
+\end{equation}\\
 \end{addmargin}
 
 \noindent\textbf{36. Was sind magnetische Domänen und wodurch entstehen sie?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Für Temperaturen unterhalb der Curie-Temperatur erwartet man, dass sich die magnetischen Momente alle parallel (oder antiparallel) bei einem Ferromagneten (Antiferromagneten) ausrichten. Beobachtet wird das nicht. Es entstehen Domänen wo innerhalb sich die Momente ausrichten, welche nicht in die gleiche Richtung zeigen. Man beobachtet also von Außen fast keine Magnetisierung. Domänen entstehen als Folge der Minimierung der freien magnetischen Enthalpiedichte (bei Ferromagneten) oder durch strukturelle Defekte (bei Antiferromagneten).\\
 \end{addmargin}
 
 \noindent\textbf{37. Was versteht man unter magnetischer Anisotropie?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Magnetische Anisotropie beschreibt die Tatsache, dass magnetische MAterialien eine Vorzugsrichtung (oder Vorzugsebene) für die Magnetisierung aufweisen können. Die magnetische Anisotropie bewirkt die Kopplung der Magnetisierung an das Kristallgitter. Die magnetische Anisotropie wird von der Dipol-Dipol-WW und von der Spin-Bahn-Kopplung verursacht.\\
 \end{addmargin}
 
 
@@ -653,7 +726,7 @@ Dafür verwendet man einen Ring aus supraleitendem Material und erzeugt in diese
 
 \noindent\textbf{2. Was ist der Meißner-Ochsenfeld-Effekt?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Ein Supraleiter verdrängt das externe Magnetfeld komplett. Es kann dringt nur über eine Länge von $\lambda_L$ ein und wird dann von den auf der Supraleiteroberfläche erzeugten Strömen kompensiert.\\
 \end{addmargin}
 
 \noindent\textbf{3. Was unterscheidet ideale Diamagnete von Supraleitern?}\\
@@ -663,506 +736,208 @@ Antwort\\
 
 \noindent\textbf{4. Wie sieht das Phasendiagramm von Supraleitern aus?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{images//KM2/SL_PhasendiagrammTyp1.PNG}
+    \caption{Phasendiagramm eines Typ 1 Supraleiters}
+    \label{fig:PhaseTyp1SL}
+\end{figure}
+siehe Abbildung \ref{fig:PhaseTyp1SL}
 \end{addmargin}
 
 \noindent\textbf{5. Was beschreiben die London-Gleichungen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die London-Gleichungen sind modifizierte Maxwell-Gleichungen, die denn verschwindenden Widerstand und idealen Diamagnetismus berücksichtigen. Die 1. London-Gleichung beschreibt die Änderung des Suprastroms:
+\begin{equation}
+    \frac{\text{d}j_s}{\text{d}t}=\frac{n_se_s^2}{m_s}E
+\end{equation}
+Diese Änderung ist proportional zum E-Feld und nicht wie im Ohmschen Fall, $j_s\propto E$.
+Die 2. London-Gleichung verbindet den Suprastrom mit dem abgeschirmten Magnetfeld:
+\begin{equation}
+    \text{rot} j_s = -\frac{n_se_s^2}{m_s}B
+\end{equation}
 \end{addmargin}
 
 \noindent\textbf{6. Was versteht man unter der Londonschen Eindringtiefe?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die London-Eindringtiefe $\lambda_L=\sqrt{\frac{m_s}{\mu_0n_se_s^2}}$ ist die Länge, auf der das externe Magnetfeld auf den Wert $\frac{1}{e}$ abfällt.
 \end{addmargin}
 
 \noindent\textbf{7. Wie hängt die Enthalpie des Supraleiters vom kritischen Magnetfeld ab?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die freie Enthalpiedifferenz zwischen einem Supraleiter und einem Normalleiter beträgt $\frac{V\cdot B_c^2}{2\mu_0}$. Die freie Enthalpie des Supraleiters wird mit steigendem B also quadratisch größer.
 \end{addmargin}
 
 \noindent\textbf{8. Wie weißt man Supraleiter als thermodynamische Ordnung nach?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Durch berechnen der Entropie und der daraus resultierenden spezifischen Wärme fällt auf, dass die spezifische Wärme einen Sprung bei $T_c$ hat. Damit hat ein Supraleiter einen Phasenübergang 2.Ordnung.
 \end{addmargin}
 
 \noindent\textbf{9. Was versteht man unter dem Isotopeneffekt?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Eigenschaften, im Fall des Supraleiters die Sprungtemperatur, sind abhängig von der Kernmasse. Für gleiche Elemente, aber unterschiedliche Kernmassen, hat die Sprungtemperatur verschiedene Werte.
 \end{addmargin}
 
 \noindent\textbf{10. Was sind Cooper-Paare?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Cooper-Paare sind attraktiv wechselwirkende Elektronen. Sie tauschen virtuelle Phononen aus. Cooper-Paare bestehen aus einem Elektron mit dem Wellenvektor $\vec{k}$ und einem Elektron mit $-\Vec{k}$.
 \end{addmargin}
 
 \noindent\textbf{11. Welcher Zusammenhang besteht zwischen Cooper-Paaren und der Gesamtwellenfunktion?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die beide Elektronen unterscheidliche Fermionen sind, muss die Gesamtwellenfunktion antisymmetrisch sein
 \end{addmargin}
 
 \noindent\textbf{12. Welche Annahme macht die BCS-Theorie über die Elektron-Elektron Wechselwirkung?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Sie ist eine attraktive Wechselwirkung, die mit einer Energieabsenkung des Elektronenpaares verbunden ist.
 \end{addmargin}
 
 \noindent\textbf{13. Was zeichnet den BCS Grundzustand aus?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Er existiert bei $T=0$ und es sind alle Cooper-Paare beteiligt.
 \end{addmargin}
 
 \noindent\textbf{14. Was versteht man unter der supraleitenden Kondensationsenergie?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Kondensationsenergie ist die Energie, die durch die Bildung der Cooper-Paare gewonnen wird. Diese Energie kann für die Verdrängung des Magnetfeldes verwendet werden.
 \end{addmargin}
 
-\noindent\textbf{15. Wie hängt die Energiedichte mit der Zustandsdichte zusammen?}\\
+\noindent\textbf{15. Wie hängt die Energielücke mit der Zustandsdichte zusammen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Energielücke ist direkt proportional zur Zustandsdichte am Ferminiveau: $\frac{E_{Kond}}{V}=-\frac{1}{4}\frac{D(E_F)}{V}\Delta^2(0)$
 \end{addmargin}
 
 \noindent\textbf{16. Wie verläuft die Dispersion ungepaarter Elektronen im Supraleiter?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Energie eines Teilchens mit $\Vec{k}$ lautet: $E_k=\sqrt{\mu^2_k+\Delta^2_k}$. $\Delta_k$ ist hierbei die Energielücke zwischen den Cooper-Paaren und den freien Teilchen, und $\mu_k$ ist die Abweichung der kinetischen Energie der Elektronen von der Fermienergie.
 \end{addmargin}
 
-\noindent\textbf{17. Wie hängen Energiedichte und supraleitende Übergangstemperatur zusammen?}\\
+\noindent\textbf{17. Wie hängen Energielücke und supraleitende Übergangstemperatur zusammen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Es gilt (fast) Materialunabhängig
+\begin{align}
+    \Delta(T=0) = 1.764 k_b T_c \,.
+\end{align}\\
 \end{addmargin}
 
-\noindent\textbf{18. Wie kann man die Energiedichte experimentell nachweisen?}\\
+\noindent\textbf{18. Wie kann man die Energielücke experimentell nachweisen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+\begin{itemize}
+    \item speziefische Wärme: normales Metall $C \propto \gamma T$, Supraleiter $C \propto \gamma T \exp \left(-\frac{\Delta(T)}{k_b T}\right)$. Daraus folgt ein Sprung der speziefischen Wärme bei der kritischen Temperatur.
+    \item thermische Wärmeleitfähigkeit: Drastische Abnahme $T << T_c$
+    \item Ultraschall Absorbtion: Starke Abnahme, da weniger Stöße von Ultraschallphononen mit Elektronen.
+\end{itemize}
 \end{addmargin}
 
 \noindent\textbf{19. Was versteht man unter Tunnelkontakt-Spektroskopie?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Durch messen des Stroms einer Tunnelbarriere bei verschiedenen Spannungen kann auf die Zustandsdichte der beteiligten Materialien zurückgeschlossen werden. Bei genügend tiefen Temperaturen gilt die Beziehung
+\begin{align}
+    \frac{dI}{dU} \propto D_s(E_k = eU) \,.
+\end{align}\\
 \end{addmargin}
 
 \noindent\textbf{20. Was bestimmt die kritische Stromstärke des Supraleiters?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die kritische Stromstärke wird durch das kritische Magnetfeld bestimmt. Für einen langen Draht gilt z. B.
+\begin{align}
+    I_c = \frac{2\pi B_c R}{\mu_0} \,.
+\end{align}
+Mikroskopisch kann dies dadurch erklärt werden, dass die kinetische Energie der Cooper-Paare nicht größer als die Kondensationsenergie jener werden darf.\\
 \end{addmargin}
 
 \noindent\textbf{21. Was versteht man unter Flussquantisierung des Supraleiters?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+In einem Supraleitenden Ring kann die Phaenverschiebung der makroskopischen Wellenfunktion nun ganze Vielfache von $2\pi$ sein. Das führt zu einer Quantisierung des magnetisches Flusses durch den Ring mit Flussquant
+\begin{align}
+    \Phi_0 = \frac{h}{2e} = 2.07 /cdot 10^{-15} Tm^2\,.
+\end{align}
+\\
 \end{addmargin}
 
 \noindent\textbf{22. Was versteht man unter dem Josephson-Gleichstrom Effekt?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Durch Tunneln von Cooper-Paaren gibt es einen Stromfluss ohne Spannungsabfall. Siehe \ref{fig:Josephson_Gleichstrom}.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{images//KM2/josephson_gleichstrom.PNG}
+    \caption{Strom-Spannungs Kennlinie eines Josephson Kontaktes}
+    \label{fig:Josephson_Gleichstrom}
+\end{figure}\\
+\\
 \end{addmargin}
 
 \noindent\textbf{23. Was versteht man unter Josephson Wechselstrom}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Beim anlegen einer Spannung an eine Supraleitende Tunnelbarriere entsteht eine Wechselspannung ($\omega \approx 48GHz$ für $U=100\mu V$). Durch anlegen eines elektrischen Feldes wächst die Phaendifferenz der beiden makroskopischen Wellenfunktionen linear. Dies ergibt einen Wechselstrom durch die Barriere
+\begin{align}
+    I = I_g \sin(\omega t + \phi_0)\,.
+\end{align}\\
 \end{addmargin}
 
 \noindent\textbf{24. Wie verhält sich ein Josephson-Kontakt im Magnetfeld?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Für eue SQUID Schleife mit 2 Josephson Kontakten gilt
+\begin{align}
+    I_s \propto \cos\left(\frac{\pi \Phi}{\Phi_0}\right)\,,
+\end{align}
+wobei $\Phi_0 = \frac{h}{2e}$ das Flussquantum ist.\\
 \end{addmargin}
 
 \noindent\textbf{25. Was besagen die Ginzburg-Landau Gleichungen?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die GL-Theorie ist eine weiterentwicklung der Landau Theorei für Phasenübergänge 2. Ordnung, hier mit Ordnungsparameter der Copperpaar-Dichte $\eta$. Eine minimierung der freien Enthalpie führt zu den Ginzburg-Landau-Gleichungen, die den Phasenübergang der Supraleitung beschreiben.\\
 \end{addmargin}
 
 \noindent\textbf{26. Was versteht man unter Ginzburg-Landau Eindringtiefe?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Eindringtiefe
+\begin{align}
+    \lambda = \sqrt{\frac{mB}{4\mu_0 e^2\lvert\alpha\rvert}}
+\end{align}
 \end{addmargin}
 
 \noindent\textbf{27. Was ist die Kohärenzlänge des Supraleiters?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Kohärenzlänge 
+\begin{align}
+   \xi_{GL} = \frac{\hbar}{\sqrt{2m \lvert \alpha \rvert}}
+\end{align}
+spiegelt die charakteristische Länge wider, über die sich die
+Wellenfunktion ändern kann. Man erhält sie aus den Ginzburg-Landau-Gleichungen. Sie ist ein Maß dafür, wei schnell sich die Cooperpaar-Diche am rand aufbaut.\\
 \end{addmargin}
-
 \noindent\textbf{28. Wie ist der Ginzburg-Landau Parameter definiert?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+\begin{align}
+    \kappa = \frac{\lambda}{\xi_{GL}}
+\end{align}
+mit Eindringtiefe des Magnetfelds $\lambda$ und Ginzburg-Landau Kohärenzlänge $\xi_{GL}$.
+Qualitativ wägt der Ginzburg Landau parameter die Verdrängungsenergie des Magnetfelds gegen die durch Magnetfelder verkleinerte Kondensationsenergie (Cooperpaardichte) auf.\\
 \end{addmargin}
 
 \noindent\textbf{29. Was sind Typ-2-Supraleiter?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Beim Typ-2-Supraleitern gibt es zwei Supraleitende Phasen. Bei niedrigen Temperaturen herrscht die Meißner-Phase vor, die auch Typ-1--Supraleitern beschreibt. Bei höheren Temperaturen ist es es allerdings bei SL 2. Art energetisch günstiger Flussschläuche auszubilden (Ginzburg-Landau-Theorie). Bei Typ 2 SL gilt $\kappa \geq \frac{1}{\sqrt{2}}$, bei Typ-1 $\kappa \leq \frac{1}{\sqrt{2}}$.\\
 \end{addmargin}
 
 \noindent\textbf{30. Wie sieht das Phasendiagramm des Typ-2-Supraleiters aus?}\\
+Siehe \ref{fig:PhaseTyp2SL}.
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{images//KM2/SL_2Art_Phasen.PNG}
+    \caption{Phasendiagramm eines Typ 2 Supraleiters}
+    \label{fig:PhaseTyp2SL}
+\end{figure} 
 \end{addmargin}
 
 \noindent\textbf{31. Was versteht man unter einem Abrikossow-Gitter}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
+Die Flusschäuche in der Schubnikov-Phase ordnen sich regelmäßig in ein Gitter an\\
 \end{addmargin}
 
 \noindent\textbf{32. Was ist flux flow?}\\
 \begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\subsection{Oberflächen}
-\noindent\textbf{1. Nenne Sie wichtige Beispiele für typische Flächenfüllungen von Oberflächen!}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{2. Was versteht man unter einer Oberflächenrekonstruktion?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{3. Was versteht man unter einer (2x1)-Rekonstruktion?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{4. Wodurch kommen Oberflächen-Rekonstruktionen zustande?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{5. Was sind symmetrische und asymmetrische Dimer?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{6. Was sind inkommensurable Rekonstruktionen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{7. Wie bezeichnet man primitive, zentrierte und gedrehte Einheitszellen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{8. Was sind vizinale Oberflächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{9. Welche typischen Defekte von Oberflächen gibt es?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{10. Was versteht man unter dem Vakuumleitwert?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{11. Wie berechnen sich Vakuumleitwerte für Parallel- und Reihenschaktungen? }\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{12. Wie lautet die Pumpgleichung?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{13. Was sind typische UHV-taugliche Materialien?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{14. Wie funktionieren Drehschieber-, Turbomolekular- und Ionengitterpumpen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{15. Wie funktionieren Pirani- und Baxard-Alpert-Röhren}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{16. Was versteht man unter LEED?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{17. Welche Informationen liefert LEED?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{18. Was versteht man unter RHEED?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{19. Was versteht man unter GIXRD?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{20. Was versteht man unter AES, EELS und PES?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{21. Wie funktioniert ein Feldionenmikroskop?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{22. Was ist der Auger-Prozess und welche Informationen liefert er?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{23. Welche Informationen liefert ein Feldionenmikroskop?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{24. Wie funktioniert ein Transmissionselektronenmikroskop?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{25. Welche Informationen liefert ein Rasterelektronenmikroskop?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{26. Was versteht man unter STM und AFM?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{27. Was versteht man unter Überschussgrößen und wie kann man diese abschätzen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{28. Was besagt das Bauer-Kriterium?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{29. Warum ist das chemische Potential gekrümmter Flächen wichtig?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{30. Was versteht man unter Oberflächenplasmonen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{31. Was versteht man unter akustischen Oberflächenwellen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{32. Was versteht man unter kritischer Schichtdicke?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{33. Was bestimmt die kritische Schichtdicke?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{34. Wie verhalten sich die Wechselwirkungen zwischen Stufen qualitativ?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{35. Welchen Einfluss haben Stufen-Wechselsirkungen auf vizinale Flächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{36. Was sind Stressdomänen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{37. Warum sind Adsorptionsprozesse wichtig?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{38. Welche lokalen Symmetrien bestehen auf Oberflächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{39. Welche Punktgruppen gibt es für Oberflächenpositionen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{40. Wie werden zweidimensionale Adsorbatstrukturen indiziert?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{41. Welche Auswirkungen haben haben starke chemische Bindungen zwischen Adsorbat und Substrat?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{42. Was versteht man unter Physisorption und Chemisorption?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{43. Was ist eine dissoziative Adsorption und Desorption?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{44. Welche Charakteristiken zeigt die Bindung von CO als Adsorbat?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{45. Was versteht man unter peroxidischen Zuständen, was unter Superoxid und physioadsorbierten Zuständen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{46. Welche Rolle spielen Wasserstoffbrücken bei der Adsorption von Wasser?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{47. Was versteht man unter Rehydrisierung?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{48. Wie kann man Wasserstoff bei der Oberflächen-Rekonstruktion nutzen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{49. Was versteht man unter dem Gittergas (ohne Wechselwirkung)?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{50. Was versteht man unter Desorption nullter, erster und zweiter Ordnung?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{51. Was sind vibronische Oberflächen-Zustände?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{52. Wie sieht die Dispersion chemiadsorbierten und physioadsorbierten Substanzen aus?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{53. Warum kommt es zu Oszillationen der Elektronendichte an Oberflächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{54. Wie unterscheiden sich elektronische Oberflächen-Zustände von Volumenzuständen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{55. Welche Auswirkung hat die Oberflächen-Rekonstruktion auf die elektronische Struktur von Halbleiteroberflächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{56. Was versteht man unter Quantum-Site-Effekten?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{57. Was versteht man unter Hüpf- und Austauschprozessen an Oberflächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{58. Was versteht man unter Ratentheorie bei Oberflächen?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{59. Was ist eine Ehrlich-Schoebel-Barriere?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{60. Was versteht man unter Ostwald-Reifung?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{61. Was versteht man unter Homoepitaxie und Heteroepitaxie?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{62. Wie ändern sich Keimdichte und Inselgröße mit T?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{63.  Wie variiert die Inseldichte fern vom Gleichgewicht mit dem Fluss $\Phi$?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{64. Was bedeutet die kritische Keimgröße bei geringer Übersättigung?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{65. Wie hängen kritische Größe und Anzahl vom chemischen Potential ab?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{66. Was versteht man unter lagenweisen Wachstum}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{67. Was versteht man unter rms-Rauhigkeit?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{68. Was bedeuten Oszillationen im RHEED Signal?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{69. Wie kommt es zu Pyramidenwachstum?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{70. Welche Aspekte treten beim Wachstum auf vizinalen Flächen auf?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{71. Wie kommt es zu Stufenbündeln?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
-\end{addmargin}
-
-\noindent\textbf{72. Was versteht man unter Mäander-Instabilitäten?}\\
-\begin{addmargin}[25pt]{0pt}
-Antwort\\
+In der Schubnikov-Phase des Supraleiters 2. Art übt der Strom kraft auf die Magnetischen Flussschläuche aus. Diese bewegen sich (FLux Flow). Andererseits können diese auch durch Defekte an einen Ort gepinnt werden.\\
 \end{addmargin}
